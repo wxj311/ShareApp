@@ -159,12 +159,6 @@ def load_model_and_explainer():
     with open(model_path, "rb") as file:
         loaded_model = pickle.load(file)
 
-    model_type = type(loaded_model).__name__
-    if "RandomForest" not in model_type and "Forest" not in model_type:
-        st.warning(
-            f"The loaded model type is {model_type}. Please confirm that this file is your final Random Forest model."
-        )
-
     loaded_explainer = shap.TreeExplainer(loaded_model)
     return loaded_model, loaded_explainer
 
