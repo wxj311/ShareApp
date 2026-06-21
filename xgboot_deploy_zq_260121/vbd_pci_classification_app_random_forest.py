@@ -19,7 +19,7 @@ st.set_page_config(
 
 # Random Forest is the final optimal model used for this web calculator.
 # Place your trained Random Forest pkl file in the same folder as this app.
-MODEL_FILE = "random_forest_model_260121.pkl"
+MODEL_FILE = "xgboost_model_260121.pkl"
 MODEL_DISPLAY_NAME = "Random Forest"
 POSITIVE_CLASS_NAME = "Concurrent PCI class"
 NEGATIVE_CLASS_NAME = "Non-concurrent PCI class"
